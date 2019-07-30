@@ -42,7 +42,6 @@ Tappen van het derailleuroog
 De Relaxx is uitgerust met een derailleuroog, maar hier zit standaard geen schroefdraad in. Om een derailleur te kunnen installeren, moet er eerst schroefdraad ingetapt worden. Dit kun je laten doen bij de fietsenmaker, maar toen het goedkoper bleek om zelf een tap te kopen was de beslissing snel gemaakt. Let wel op dat je de juiste tap gebruikt: het is een M10 tap, maar met een andere spoed dan gebruikelijk; zoek naar een "M10 x 1 mm" tap. Ik heb er één kunnen bestellen bij `Giga-Bikes <https://www.giga-bikes.nl>`_ in Tilburg voor €7,35.
 
 .. figure:: derailleuroog-tap-M10x1mm.jpeg
-   :scale: 25 %
    :align: center
 
    *M10 x 1 mm tap voor het derailleuroog*

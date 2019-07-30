@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Automatische kettingspanner voor de Batavus Relaxx</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="automatische-kettingspanner-voor-de-batavus-relaxx">
+<h1 class="title">Automatische kettingspanner voor de Batavus Relaxx</h1>
+
+<p>Sinds een tijdje in Bemmel gewoond te hebben, ben ik in het bezit van een Batavus Relaxx: een fiets die het midden houdt tussen een ligfiets en een stadsfiets. Na een kleine tien kilometer over de dijk naar Nijmegen, voelde het lederen zadel op mijn oude Gazelle zo hard aan als steen. Hoewel de Relaxx niet aan kop zal gaan in een snelheidsrace, is hij—de naam zegt het al—wel een hele comfortabele fiets, en hij maakte het woon-werkverkeer dan ook een stuk aangenamer. Ook sinds verhuizing naar Utrecht weet hij zich in het goed staande te houden in het stadsverkeer.</p>
+<div class="figure align-center">
+<img alt="DSC_0079.JPG" src="DSC_0079.JPG" style="width: 768.0px; height: 508.8px;" />
+<p class="caption">De FlevoBike/Batavus Relaxx, groene uitvoering, met modificaties. Oorspronkelijk uitgebracht tussen 1995 en 1999</p>
+</div>
+<p>De Relaxx heeft één groot nadeel, iets wat eigenlijk niets minder dan een ontwerpfout is. De kettingweg is, begrijpelijkerwijs, erg lang: van de trappers aan de voorkant tot de naaf in het achterwiel. Om deze lange ketting in goede banen te leiden, gebruikt de Relaxx twee plasic kokers, waar de ketting doorheen loopt, en twee plastic wieltjes, die de ketting om het frame heenleiden. De achtervork is relatief breed ten opzichte van de rest van het frame, en zou anders in de weg zitten van de ketting. De wieltjes leiden de ketting hier omheen.</p>
+<div class="figure align-center">
+<img alt="DSC_0752.JPG" src="DSC_0752.JPG" style="width: 768.0px; height: 432.0px;" />
+<p class="caption">De oude situatie: plastic wieltjes</p>
+</div>
+<p>De wieltjes regelen de kettingspanning, aangezien het onderste wieltje op een metalen arm zit, en dit geheel (de arm en het wieltje) kan draaien. Om de ketting op spanning te brengen, moet je de bout door het bovenste wieltje losdraaien, met je hele gewicht het onderste wieltje naar voren duwen, en dan tegelijkertijd de bout weer aandraaien.</p>
+<p>Na verloop van tijd komt er dan onvermijdelijk toch weer wat speling in de afstemming, en begint het cranktandwiel tandjes over te slaan als je eens wat harder doortrapt. Door het gebrek aan een veer is er niets om de kettingspanning op peil te houden. Bovendien zijn de wieltjes niet gelagerd, en steekt het geheel nogal uit, met het risico dat er bijvoorbeeld een ernaast geparkeerde fiets tegenaan komt.</p>
+<div class="figure align-center">
+<img alt="DSC_0047.JPG" src="DSC_0047.JPG" style="width: 768.0px; height: 432.0px;" />
+<p class="caption">De nieuwe situatie: derailleur geïnstalleerd, en twee nieuwe geleidewieltjes</p>
+</div>
+<p>Om een en ander te verbeteren, heb ik een simpele maar effectieve automatische kettingspanner gemaakt, met behulp van een oude derailleur, twee losse derailleurwieltjes, en wat kleine ijzerwaar uit de doe-het-zelfwinkel.</p>
+<div class="section" id="tappen-van-het-derailleuroog">
+<h1>Tappen van het derailleuroog</h1>
+<p>De Relaxx is uitgerust met een derailleuroog, maar hier zit standaard geen schroefdraad in. Om een derailleur te kunnen installeren, moet er eerst schroefdraad ingetapt worden. Dit kun je laten doen bij de fietsenmaker, maar toen het goedkoper bleek om zelf een tap te kopen was de beslissing snel gemaakt. Let wel op dat je de juiste tap gebruikt: het is een M10 tap, maar met een andere spoed dan gebruikelijk; zoek naar een &quot;M10&nbsp;x&nbsp;1&nbsp;mm&quot; tap. Ik heb er één kunnen bestellen bij <a class="reference external" href="https://www.giga-bikes.nl">Giga-Bikes</a> in Tilburg voor €7,35.</p>
+<div class="figure align-center">
+<img alt="derailleuroog-tap-M10x1mm.jpeg" src="derailleuroog-tap-M10x1mm.jpeg" style="width: 175.5px; height: 435.0px;" />
+<p class="caption">M10&nbsp;x&nbsp;1&nbsp;mm tap voor het derailleuroog</p>
+</div>
+<p>Om het te tappen kun je het beste een accuboor gebruiken, en deze op de boorstand zetten. Je wilt zo langzaam mogelijk draaien, en de tap hierbij heel stabiel houden. Vooral dat laatste is veel makkelijker als je een accuboor gebruikt dan het met de hand te doen. Draai de tap er niet in één keer in maar draai hem tussendoor ook een paar keer weer een paar slagen terug, om het metaal weg te voeren.</p>
+</div>
+<div class="section" id="inbouwen-van-de-derailleur">
+<h1>Inbouwen van de derailleur</h1>
+<p>Bij <a class="reference external" href="https://www.facebook.com/AL16Wheelers/">AL16 Wheelers</a> mocht ik een tweedehands derailleur meenemen voor €6,38, inclusief de bijbehorende twee wieltjes. Omdat ik liever niet de lengte van de ketting aan wilde passen, zocht ik naar de kleinst mogelijke derailleur. Deze Shimano 600 past perfect, maar let op dat hij wel te klein is voor kogelgelagerde wieltjes.</p>
+<div class="figure align-center">
+<img alt="DSC_0055.JPG" src="DSC_0055.JPG" style="width: 768.0px; height: 432.0px;" />
+<p class="caption">Derailleur</p>
+</div>
+<p>De derailleur verschuift normaal zijwaarts (van en naar het frame toe) om de ketting op het juiste tandwiel te leggen. De positie wordt bepaald door de versnellingskabel die naar het stuur toeloopt. Deze functie is nu niet nodig, aangezien de derailleur alleen wordt gebruikt omwille van zijn torsieveer. Om hem op de juiste stand vast te zetten, heb ik een los versnellingskabeltje gekocht (ook bij AL16 Wheelers, voor €0,50), de derailleur met de hand opgespannen totdat de positie van de ketting er goed uitzag, en vervolgens de kabel vastgezet met een schroefje op de derailleur dat wel voor deze functie gemaakt leek.</p>
+<div class="figure align-center">
+<img alt="DSC_0058.JPG" src="DSC_0058.JPG" style="width: 768.0px; height: 432.0px;" />
+<p class="caption">De derailleur, vastgezet met een eindje versnellingskabel</p>
+</div>
+</div>
+<div class="section" id="montage-van-de-nieuwe-geleidewieltjes">
+<h1>Montage van de nieuwe geleidewieltjes</h1>
+<div class="figure align-center">
+<img alt="derailleurwieltjes van AliExpress.com" src="aliexpress-derailleurwieltjes.jpeg" style="width: 400.0px; height: 400.0px;" />
+</div>
+<p>De oude plastic geleidewieltjes waren niet gelagerd, wat voor veel wrijving zorgde als ze niet regelmatig gesmeerd worden, en zeker wanneer er wat vuil rond de as sluipt. Ik heb de oude wieltjes vervangen door kogelgelagerde, 11 tands aluminium wieltjes. Deze zijn normaal eigenlijk bedoeld voor plaatsing in een derailleur, maar ze zijn ook ideaal voor deze toepassing.</p>
+<div class="figure align-center">
+<img alt="DSC_0050.JPG" src="DSC_0050.JPG" style="width: 768.0px; height: 432.0px;" />
+<p class="caption">Zijaanzicht van de nieuwe geleidewieltjes: de as in het rechterwieltje is M8, die in het linker M6</p>
+</div>
+<p>Oorspronkelijk zat het eerste wieltje (rechtsboven in de foto) middels een M8 bout in het frame geschroefd. Ik heb deze vervangen door een stuk M8 draaideind, op de juiste lengte afgezaagd met een ijzerzaagje. De rode busjes in het wieltje moeten even uitgeboord worden op 8&nbsp;mm. Een dopmoer zorgt ervoor dat er aan de buitenkant geen scherpe eindjes meer aanzitten.</p>
+<div class="figure align-center">
+<img alt="DSC_0199.JPG" src="DSC_0199.JPG" style="width: 768.0px; height: 432.0px;" />
+<p class="caption">Het M6 draaideind steekt een stukje uit aan de achterkant, en rust hiermee tegen de onderzijde van het frame</p>
+</div>
+<p>Voor het tweede wieltje heb ik een M6 draaideind genomen, en deze zo gemonteerd dat het aan de achterkant ongeveer een centimeter extra uitsteekt. Daardoor rust het tegen de onderkant van het frame, of mogelijk tegen de montagebeugel van de fietsstandaard, afhankelijk van het model standaard dat geïnstalleerd is. Het krachtmoment dat onstaat als gevolg van de kettingspanning draagt er (in tegenstelling tot voorheen) nu juist aan bij om het geheel op zijn plaats te houden. Dit levert een stabiele plaatsing op.</p>
+<div class="figure align-center">
+<img alt="beugeltjes.jpeg" src="beugeltjes.jpeg" style="width: 640.0px; height: 360.0px;" />
+<p class="caption">Beugeltjes voor de montage van het linker wieltje: origineel (onder) en nieuw (boven)</p>
+</div>
+<p>Het beugeltje waar het linker wieltje op gemonteerd zit, is niet het origineel wat bij de fiets hoort, maar een iets kortere die toevallig in de werkplaats lag. De afstand tussen de middelpunten van de wieltjes is bij deze zo'n 6.3&nbsp;cm (tegenover 8&nbsp;cm bij het orignele beugeltje); de breedte is ca. 2&nbsp;cm. Je zou hier ook een vlak aluminiumprofiel voor kunnen gebruiken. Het originele beugeltje is ook een optie, maar is aanzienlijk langer en heeft hierdoor een extra stelschroef in het midden nodig. Het onderste wieltje steekt in deze opstelling wederom een flink stuk onder het frame uit, dus een kortere beugel is aan te raden.</p>
+<div class="figure align-center">
+<img alt="DSC_0074.JPG" src="DSC_0074.JPG" style="width: 768.0px; height: 432.0px;" />
+</div>
+<p>In het bovenaanzicht kun je de uitlijning van de kettingbaan goed zien. Het bleek dat een paar sluitringen boven en een moertje onder de perfecte uitlijning opleverden, maar afhankelijk van je onderdelen moet je er misschien even mee experimenteren. Je kunt de zijwaartse positie van de wieltjes goed afstellen door er wat extra sluitringetjes tussen te doen of weg te nemen.</p>
+</div>
+<div class="section" id="conclusie">
+<h1>Conclusie</h1>
+<p>Na ruim twee weken intensief testen, is de crank niet één keer overgeslagen. Vers gesmeerd draaien de trappers gemakkelijk terugwaarts; het leeuwendeel van de wrijving komt nu voor rekening van de twee lange plastic kokers waar de ketting doorheen voert. In combinatie met het grotere cranktandwiel (38T in plaats van 33T) dat ik hiervoor reeds heb geplaatst, ben ik dik tevreden!</p>
+<p>Ik ben altijd benieuwd naar feedback, andere oplossingen, of variaties op het idee. Stuur me een mail op: <a class="reference external" href="mailto:charl&#64;itfromb.it">charl&#64;itfromb.it</a></p>
+</div>
+<div class="section" id="totale-kosten">
+<h1>Totale kosten</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="60%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Wat</th>
+<th class="head">Waar</th>
+<th class="head">Kosten</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Tap</td>
+<td><a class="reference external" href="http://www.giga-bikes.nl/">Giga-bikes.nl (Tilburg)</a></td>
+<td>€7,35</td>
+</tr>
+<tr><td>Derailleur + versnellingskabel</td>
+<td><a class="reference external" href="https://www.facebook.com/AL16Wheelers/">AL16 Wheelers (Utrecht)</a></td>
+<td>€6,88</td>
+</tr>
+<tr><td>Derailleurwieltjes</td>
+<td><a class="reference external" href="https://www.aliexpress.com">AliExpress</a></td>
+<td>€4,55</td>
+</tr>
+<tr><td>Beugeltje (aluminium profiel)</td>
+<td>Bouwmarkt</td>
+<td>±€2,50</td>
+</tr>
+<tr><td><p class="first">IJzerwaren:</p>
+<ul class="last simple">
+<li>Draaideind M6</li>
+<li>Draaideind M8</li>
+<li>Moer M6 (2x)</li>
+<li>Dopmoer M6</li>
+<li>Dopmoer M8</li>
+<li>Sluitring M6</li>
+<li>Sluitring M8 (3x)</li>
+</ul>
+</td>
+<td>&nbsp;</td>
+<td>±€3,00</td>
+</tr>
+<tr><td colspan="2"><strong>Totaal:</strong></td>
+<td>€24,28</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
